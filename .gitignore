@@ -1,0 +1,12 @@
+*.log
+dist
+.DS_Store
+cjs
+coverage
+es
+node_modules
+umd
+.env
+.rpt2_cache
+types/*
+.vscode

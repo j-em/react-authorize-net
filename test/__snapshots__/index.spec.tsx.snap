@@ -1,0 +1,1864 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormContainer submitHandler() should render using the default bundled UI 1`] = `
+<FormContainer
+  amount={25}
+  apiLoginId="3HD4q529xcBh"
+  clientKey="44wj69S38Qr63EwaLbu8aZL6d6MnhYjLB4yA99p73hjZgh22Yef4yPuKWc9T389Y"
+  environment="sandbox"
+  render={[Function]}
+>
+  <div>
+    <FormComponent
+      amount={25}
+      apiErrors={Array []}
+      handleBlur={[Function]}
+      handleChange={[Function]}
+      handleFocus={[Function]}
+      handleSubmit={[Function]}
+      validationErrors={
+        Object {
+          "cardCode": false,
+          "cardNumber": false,
+          "expDate": false,
+        }
+      }
+      values={
+        Object {
+          "cardCode": "",
+          "cardNumber": "",
+          "expDate": "",
+        }
+      }
+    >
+      <Styled(styled.div)
+        bg="#6772e5"
+        flexWrap="wrap"
+        justifyContent="center"
+        mb={4}
+        p={
+          Array [
+            3,
+            5,
+          ]
+        }
+      >
+        <StyledComponent
+          bg="#6772e5"
+          flexWrap="wrap"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": false,
+                "lastClassName": "jDGYoj",
+                "rules": Array [
+                  "box-sizing: border-box;",
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  "display: flex;",
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                  [Function],
+                ],
+              },
+              "displayName": "Styled(styled.div)",
+              "foldedComponentIds": Array [
+                "sc-bdVaJa",
+              ],
+              "propTypes": Object {
+                "alignItems": [Function],
+                "flexDirection": [Function],
+                "flexWrap": [Function],
+                "justifyContent": [Function],
+              },
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          justifyContent="center"
+          mb={4}
+          p={
+            Array [
+              3,
+              5,
+            ]
+          }
+        >
+          <div
+            className="sc-bdVaJa sc-bwzfXH dBxpHq"
+          >
+            <GlobalStyleComponent />
+            <styled.div
+              mb={
+                Array [
+                  3,
+                  0,
+                ]
+              }
+              width={
+                Array [
+                  1,
+                  0.5,
+                ]
+              }
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "bUswyd",
+                      "rules": Array [
+                        "box-sizing: border-box;",
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "propTypes": Object {
+                      "alignSelf": [Function],
+                      "bg": [Function],
+                      "color": [Function],
+                      "flex": [Function],
+                      "fontSize": [Function],
+                      "m": [Function],
+                      "mb": [Function],
+                      "ml": [Function],
+                      "mr": [Function],
+                      "mt": [Function],
+                      "mx": [Function],
+                      "my": [Function],
+                      "order": [Function],
+                      "p": [Function],
+                      "pb": [Function],
+                      "pl": [Function],
+                      "pr": [Function],
+                      "pt": [Function],
+                      "px": [Function],
+                      "py": [Function],
+                      "width": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                mb={
+                  Array [
+                    3,
+                    0,
+                  ]
+                }
+                width={
+                  Array [
+                    1,
+                    0.5,
+                  ]
+                }
+              >
+                <div
+                  className="sc-bdVaJa caBaHk"
+                  width={
+                    Array [
+                      1,
+                      0.5,
+                    ]
+                  }
+                >
+                  <CardNumber
+                    focused={false}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    valid={false}
+                    value=""
+                  >
+                    <Styled(Input)
+                      focused={false}
+                      guide={false}
+                      label={
+                        <FaCreditCard
+                          size="1.1em"
+                        />
+                      }
+                      mask={
+                        Array [
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d/,
+                          " ",
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d/,
+                          " ",
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d/,
+                          " ",
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d/,
+                        ]
+                      }
+                      name="cardNumber"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      placeholder="1234 5678 9012 3456"
+                      type="text"
+                      valid={false}
+                      value=""
+                    >
+                      <StyledComponent
+                        focused={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htoDjs",
+                              "isStatic": false,
+                              "lastClassName": "fLbdjv",
+                              "rules": Array [
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Styled(Input)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-htoDjs",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        guide={false}
+                        label={
+                          <FaCreditCard
+                            size="1.1em"
+                          />
+                        }
+                        mask={
+                          Array [
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d/,
+                            " ",
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d/,
+                            " ",
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d/,
+                            " ",
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d/,
+                          ]
+                        }
+                        name="cardNumber"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        placeholder="1234 5678 9012 3456"
+                        type="text"
+                        valid={false}
+                        value=""
+                      >
+                        <Input
+                          className="sc-htoDjs fLbdjv"
+                          focused={false}
+                          guide={false}
+                          label={
+                            <FaCreditCard
+                              size="1.1em"
+                            />
+                          }
+                          mask={
+                            Array [
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d/,
+                              " ",
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d/,
+                              " ",
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d/,
+                              " ",
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d/,
+                            ]
+                          }
+                          name="cardNumber"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder="1234 5678 9012 3456"
+                          type="text"
+                          valid={false}
+                          value=""
+                        >
+                          <Styled(styled.div)
+                            alignItems="center"
+                            className="sc-htoDjs fLbdjv"
+                          >
+                            <StyledComponent
+                              alignItems="center"
+                              className="sc-htoDjs fLbdjv"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": false,
+                                    "lastClassName": "jDGYoj",
+                                    "rules": Array [
+                                      "box-sizing: border-box;",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      "display: flex;",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Styled(styled.div)",
+                                  "foldedComponentIds": Array [
+                                    "sc-bdVaJa",
+                                  ],
+                                  "propTypes": Object {
+                                    "alignItems": [Function],
+                                    "flexDirection": [Function],
+                                    "flexWrap": [Function],
+                                    "justifyContent": [Function],
+                                  },
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="sc-bdVaJa sc-htoDjs fLbdjv sc-bwzfXH jruoDg"
+                              >
+                                <Styled(styled.div)
+                                  flexDirection="row-reverse"
+                                  mr={2}
+                                >
+                                  <StyledComponent
+                                    flexDirection="row-reverse"
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-bwzfXH",
+                                          "isStatic": false,
+                                          "lastClassName": "jDGYoj",
+                                          "rules": Array [
+                                            "box-sizing: border-box;",
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            "display: flex;",
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "Styled(styled.div)",
+                                        "foldedComponentIds": Array [
+                                          "sc-bdVaJa",
+                                        ],
+                                        "propTypes": Object {
+                                          "alignItems": [Function],
+                                          "flexDirection": [Function],
+                                          "flexWrap": [Function],
+                                          "justifyContent": [Function],
+                                        },
+                                        "render": [Function],
+                                        "styledComponentId": "sc-bwzfXH",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    mr={2}
+                                  >
+                                    <div
+                                      className="sc-bdVaJa sc-bwzfXH gMMBhP"
+                                    >
+                                      <FaCreditCard
+                                        size="1.1em"
+                                      >
+                                        <IconBase
+                                          attr={
+                                            Object {
+                                              "viewBox": "0 0 576 512",
+                                            }
+                                          }
+                                          size="1.1em"
+                                        >
+                                          <svg
+                                            fill="currentColor"
+                                            height="1.1em"
+                                            size="1.1em"
+                                            stroke="currentColor"
+                                            strokeWidth="0"
+                                            style={
+                                              Object {
+                                                "color": undefined,
+                                              }
+                                            }
+                                            viewBox="0 0 576 512"
+                                            width="1.1em"
+                                          >
+                                            <path
+                                              d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"
+                                              key="0"
+                                            />
+                                          </svg>
+                                        </IconBase>
+                                      </FaCreditCard>
+                                    </div>
+                                  </StyledComponent>
+                                </Styled(styled.div)>
+                                <styled.div>
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-bdVaJa",
+                                          "isStatic": false,
+                                          "lastClassName": "bUswyd",
+                                          "rules": Array [
+                                            "box-sizing: border-box;",
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "styled.div",
+                                        "foldedComponentIds": Array [],
+                                        "propTypes": Object {
+                                          "alignSelf": [Function],
+                                          "bg": [Function],
+                                          "color": [Function],
+                                          "flex": [Function],
+                                          "fontSize": [Function],
+                                          "m": [Function],
+                                          "mb": [Function],
+                                          "ml": [Function],
+                                          "mr": [Function],
+                                          "mt": [Function],
+                                          "mx": [Function],
+                                          "my": [Function],
+                                          "order": [Function],
+                                          "p": [Function],
+                                          "pb": [Function],
+                                          "pl": [Function],
+                                          "pr": [Function],
+                                          "pt": [Function],
+                                          "px": [Function],
+                                          "py": [Function],
+                                          "width": [Function],
+                                        },
+                                        "render": [Function],
+                                        "styledComponentId": "sc-bdVaJa",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="sc-bdVaJa iHZvIS"
+                                    >
+                                      <t
+                                        guide={false}
+                                        mask={
+                                          Array [
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            " ",
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            " ",
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            " ",
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                          ]
+                                        }
+                                        name="cardNumber"
+                                        onBlur={[Function]}
+                                        onChange={[Function]}
+                                        onFocus={[Function]}
+                                        placeholder="1234 5678 9012 3456"
+                                        render={[Function]}
+                                        style={
+                                          Object {
+                                            "boxSizing": "border-box",
+                                            "color": "inherit",
+                                            "fontSize": "inherit",
+                                            "guide": false,
+                                            "name": "cardNumber",
+                                            "placeholder": "1234 5678 9012 3456",
+                                            "type": "text",
+                                            "value": "",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        type="text"
+                                        value=""
+                                      >
+                                        <input
+                                          defaultValue=""
+                                          name="cardNumber"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          placeholder="1234 5678 9012 3456"
+                                          style={
+                                            Object {
+                                              "boxSizing": "border-box",
+                                              "color": "inherit",
+                                              "fontSize": "inherit",
+                                              "guide": false,
+                                              "name": "cardNumber",
+                                              "placeholder": "1234 5678 9012 3456",
+                                              "type": "text",
+                                              "value": "",
+                                              "width": "100%",
+                                            }
+                                          }
+                                          type="text"
+                                        />
+                                      </t>
+                                    </div>
+                                  </StyledComponent>
+                                </styled.div>
+                              </div>
+                            </StyledComponent>
+                          </Styled(styled.div)>
+                        </Input>
+                      </StyledComponent>
+                    </Styled(Input)>
+                  </CardNumber>
+                </div>
+              </StyledComponent>
+            </styled.div>
+            <styled.div
+              pl={
+                Array [
+                  0,
+                  4,
+                ]
+              }
+              width={
+                Array [
+                  0.5,
+                  0.25,
+                ]
+              }
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "bUswyd",
+                      "rules": Array [
+                        "box-sizing: border-box;",
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "propTypes": Object {
+                      "alignSelf": [Function],
+                      "bg": [Function],
+                      "color": [Function],
+                      "flex": [Function],
+                      "fontSize": [Function],
+                      "m": [Function],
+                      "mb": [Function],
+                      "ml": [Function],
+                      "mr": [Function],
+                      "mt": [Function],
+                      "mx": [Function],
+                      "my": [Function],
+                      "order": [Function],
+                      "p": [Function],
+                      "pb": [Function],
+                      "pl": [Function],
+                      "pr": [Function],
+                      "pt": [Function],
+                      "px": [Function],
+                      "py": [Function],
+                      "width": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                pl={
+                  Array [
+                    0,
+                    4,
+                  ]
+                }
+                width={
+                  Array [
+                    0.5,
+                    0.25,
+                  ]
+                }
+              >
+                <div
+                  className="sc-bdVaJa bZcclD"
+                  width={
+                    Array [
+                      0.5,
+                      0.25,
+                    ]
+                  }
+                >
+                  <CardCode
+                    focused={false}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    valid={false}
+                    value=""
+                  >
+                    <Styled(Input)
+                      focused={false}
+                      guide={false}
+                      mask={
+                        Array [
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d/,
+                          /\\\\d\\?/,
+                        ]
+                      }
+                      name="cardCode"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      placeholder="CVC"
+                      type="text"
+                      valid={false}
+                      value=""
+                    >
+                      <StyledComponent
+                        focused={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htoDjs",
+                              "isStatic": false,
+                              "lastClassName": "fLbdjv",
+                              "rules": Array [
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Styled(Input)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-htoDjs",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        guide={false}
+                        mask={
+                          Array [
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d/,
+                            /\\\\d\\?/,
+                          ]
+                        }
+                        name="cardCode"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        placeholder="CVC"
+                        type="text"
+                        valid={false}
+                        value=""
+                      >
+                        <Input
+                          className="sc-htoDjs fLbdjv"
+                          focused={false}
+                          guide={false}
+                          mask={
+                            Array [
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d/,
+                              /\\\\d\\?/,
+                            ]
+                          }
+                          name="cardCode"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder="CVC"
+                          type="text"
+                          valid={false}
+                          value=""
+                        >
+                          <Styled(styled.div)
+                            alignItems="center"
+                            className="sc-htoDjs fLbdjv"
+                          >
+                            <StyledComponent
+                              alignItems="center"
+                              className="sc-htoDjs fLbdjv"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": false,
+                                    "lastClassName": "jDGYoj",
+                                    "rules": Array [
+                                      "box-sizing: border-box;",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      "display: flex;",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Styled(styled.div)",
+                                  "foldedComponentIds": Array [
+                                    "sc-bdVaJa",
+                                  ],
+                                  "propTypes": Object {
+                                    "alignItems": [Function],
+                                    "flexDirection": [Function],
+                                    "flexWrap": [Function],
+                                    "justifyContent": [Function],
+                                  },
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="sc-bdVaJa sc-htoDjs fLbdjv sc-bwzfXH jruoDg"
+                              >
+                                <styled.div>
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-bdVaJa",
+                                          "isStatic": false,
+                                          "lastClassName": "bUswyd",
+                                          "rules": Array [
+                                            "box-sizing: border-box;",
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "styled.div",
+                                        "foldedComponentIds": Array [],
+                                        "propTypes": Object {
+                                          "alignSelf": [Function],
+                                          "bg": [Function],
+                                          "color": [Function],
+                                          "flex": [Function],
+                                          "fontSize": [Function],
+                                          "m": [Function],
+                                          "mb": [Function],
+                                          "ml": [Function],
+                                          "mr": [Function],
+                                          "mt": [Function],
+                                          "mx": [Function],
+                                          "my": [Function],
+                                          "order": [Function],
+                                          "p": [Function],
+                                          "pb": [Function],
+                                          "pl": [Function],
+                                          "pr": [Function],
+                                          "pt": [Function],
+                                          "px": [Function],
+                                          "py": [Function],
+                                          "width": [Function],
+                                        },
+                                        "render": [Function],
+                                        "styledComponentId": "sc-bdVaJa",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="sc-bdVaJa iHZvIS"
+                                    >
+                                      <t
+                                        guide={false}
+                                        mask={
+                                          Array [
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            /\\\\d\\?/,
+                                          ]
+                                        }
+                                        name="cardCode"
+                                        onBlur={[Function]}
+                                        onChange={[Function]}
+                                        onFocus={[Function]}
+                                        placeholder="CVC"
+                                        render={[Function]}
+                                        style={
+                                          Object {
+                                            "boxSizing": "border-box",
+                                            "color": "inherit",
+                                            "fontSize": "inherit",
+                                            "guide": false,
+                                            "name": "cardCode",
+                                            "placeholder": "CVC",
+                                            "type": "text",
+                                            "value": "",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        type="text"
+                                        value=""
+                                      >
+                                        <input
+                                          defaultValue=""
+                                          name="cardCode"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          placeholder="CVC"
+                                          style={
+                                            Object {
+                                              "boxSizing": "border-box",
+                                              "color": "inherit",
+                                              "fontSize": "inherit",
+                                              "guide": false,
+                                              "name": "cardCode",
+                                              "placeholder": "CVC",
+                                              "type": "text",
+                                              "value": "",
+                                              "width": "100%",
+                                            }
+                                          }
+                                          type="text"
+                                        />
+                                      </t>
+                                    </div>
+                                  </StyledComponent>
+                                </styled.div>
+                              </div>
+                            </StyledComponent>
+                          </Styled(styled.div)>
+                        </Input>
+                      </StyledComponent>
+                    </Styled(Input)>
+                  </CardCode>
+                </div>
+              </StyledComponent>
+            </styled.div>
+            <styled.div
+              pl={2}
+              width={
+                Array [
+                  0.5,
+                  0.25,
+                ]
+              }
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "bUswyd",
+                      "rules": Array [
+                        "box-sizing: border-box;",
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "propTypes": Object {
+                      "alignSelf": [Function],
+                      "bg": [Function],
+                      "color": [Function],
+                      "flex": [Function],
+                      "fontSize": [Function],
+                      "m": [Function],
+                      "mb": [Function],
+                      "ml": [Function],
+                      "mr": [Function],
+                      "mt": [Function],
+                      "mx": [Function],
+                      "my": [Function],
+                      "order": [Function],
+                      "p": [Function],
+                      "pb": [Function],
+                      "pl": [Function],
+                      "pr": [Function],
+                      "pt": [Function],
+                      "px": [Function],
+                      "py": [Function],
+                      "width": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                pl={2}
+                width={
+                  Array [
+                    0.5,
+                    0.25,
+                  ]
+                }
+              >
+                <div
+                  className="sc-bdVaJa dHwQhi"
+                  width={
+                    Array [
+                      0.5,
+                      0.25,
+                    ]
+                  }
+                >
+                  <ExpDate
+                    focused={false}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    valid={false}
+                    value=""
+                  >
+                    <Styled(Input)
+                      focused={false}
+                      guide={false}
+                      label={
+                        <FaRegCalendarAlt
+                          size="1.1em"
+                        />
+                      }
+                      mask={
+                        Array [
+                          /\\\\d/,
+                          /\\\\d/,
+                          "/",
+                          /\\\\d/,
+                          /\\\\d/,
+                        ]
+                      }
+                      name="expDate"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      placeholder="MM/YY"
+                      type="text"
+                      valid={false}
+                      value=""
+                    >
+                      <StyledComponent
+                        focused={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htoDjs",
+                              "isStatic": false,
+                              "lastClassName": "fLbdjv",
+                              "rules": Array [
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Styled(Input)",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-htoDjs",
+                            "target": [Function],
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                            Symbol(Symbol.hasInstance): [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        guide={false}
+                        label={
+                          <FaRegCalendarAlt
+                            size="1.1em"
+                          />
+                        }
+                        mask={
+                          Array [
+                            /\\\\d/,
+                            /\\\\d/,
+                            "/",
+                            /\\\\d/,
+                            /\\\\d/,
+                          ]
+                        }
+                        name="expDate"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        placeholder="MM/YY"
+                        type="text"
+                        valid={false}
+                        value=""
+                      >
+                        <Input
+                          className="sc-htoDjs fLbdjv"
+                          focused={false}
+                          guide={false}
+                          label={
+                            <FaRegCalendarAlt
+                              size="1.1em"
+                            />
+                          }
+                          mask={
+                            Array [
+                              /\\\\d/,
+                              /\\\\d/,
+                              "/",
+                              /\\\\d/,
+                              /\\\\d/,
+                            ]
+                          }
+                          name="expDate"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          placeholder="MM/YY"
+                          type="text"
+                          valid={false}
+                          value=""
+                        >
+                          <Styled(styled.div)
+                            alignItems="center"
+                            className="sc-htoDjs fLbdjv"
+                          >
+                            <StyledComponent
+                              alignItems="center"
+                              className="sc-htoDjs fLbdjv"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": false,
+                                    "lastClassName": "jDGYoj",
+                                    "rules": Array [
+                                      "box-sizing: border-box;",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      "display: flex;",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Styled(styled.div)",
+                                  "foldedComponentIds": Array [
+                                    "sc-bdVaJa",
+                                  ],
+                                  "propTypes": Object {
+                                    "alignItems": [Function],
+                                    "flexDirection": [Function],
+                                    "flexWrap": [Function],
+                                    "justifyContent": [Function],
+                                  },
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="sc-bdVaJa sc-htoDjs fLbdjv sc-bwzfXH jruoDg"
+                              >
+                                <Styled(styled.div)
+                                  flexDirection="row-reverse"
+                                  mr={2}
+                                >
+                                  <StyledComponent
+                                    flexDirection="row-reverse"
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-bwzfXH",
+                                          "isStatic": false,
+                                          "lastClassName": "jDGYoj",
+                                          "rules": Array [
+                                            "box-sizing: border-box;",
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            "display: flex;",
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "Styled(styled.div)",
+                                        "foldedComponentIds": Array [
+                                          "sc-bdVaJa",
+                                        ],
+                                        "propTypes": Object {
+                                          "alignItems": [Function],
+                                          "flexDirection": [Function],
+                                          "flexWrap": [Function],
+                                          "justifyContent": [Function],
+                                        },
+                                        "render": [Function],
+                                        "styledComponentId": "sc-bwzfXH",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    mr={2}
+                                  >
+                                    <div
+                                      className="sc-bdVaJa sc-bwzfXH gMMBhP"
+                                    >
+                                      <FaRegCalendarAlt
+                                        size="1.1em"
+                                      >
+                                        <IconBase
+                                          attr={
+                                            Object {
+                                              "viewBox": "0 0 448 512",
+                                            }
+                                          }
+                                          size="1.1em"
+                                        >
+                                          <svg
+                                            fill="currentColor"
+                                            height="1.1em"
+                                            size="1.1em"
+                                            stroke="currentColor"
+                                            strokeWidth="0"
+                                            style={
+                                              Object {
+                                                "color": undefined,
+                                              }
+                                            }
+                                            viewBox="0 0 448 512"
+                                            width="1.1em"
+                                          >
+                                            <path
+                                              d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"
+                                              key="0"
+                                            />
+                                          </svg>
+                                        </IconBase>
+                                      </FaRegCalendarAlt>
+                                    </div>
+                                  </StyledComponent>
+                                </Styled(styled.div)>
+                                <styled.div>
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-bdVaJa",
+                                          "isStatic": false,
+                                          "lastClassName": "bUswyd",
+                                          "rules": Array [
+                                            "box-sizing: border-box;",
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "styled.div",
+                                        "foldedComponentIds": Array [],
+                                        "propTypes": Object {
+                                          "alignSelf": [Function],
+                                          "bg": [Function],
+                                          "color": [Function],
+                                          "flex": [Function],
+                                          "fontSize": [Function],
+                                          "m": [Function],
+                                          "mb": [Function],
+                                          "ml": [Function],
+                                          "mr": [Function],
+                                          "mt": [Function],
+                                          "mx": [Function],
+                                          "my": [Function],
+                                          "order": [Function],
+                                          "p": [Function],
+                                          "pb": [Function],
+                                          "pl": [Function],
+                                          "pr": [Function],
+                                          "pt": [Function],
+                                          "px": [Function],
+                                          "py": [Function],
+                                          "width": [Function],
+                                        },
+                                        "render": [Function],
+                                        "styledComponentId": "sc-bdVaJa",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="sc-bdVaJa iHZvIS"
+                                    >
+                                      <t
+                                        guide={false}
+                                        mask={
+                                          Array [
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                            "/",
+                                            /\\\\d/,
+                                            /\\\\d/,
+                                          ]
+                                        }
+                                        name="expDate"
+                                        onBlur={[Function]}
+                                        onChange={[Function]}
+                                        onFocus={[Function]}
+                                        placeholder="MM/YY"
+                                        render={[Function]}
+                                        style={
+                                          Object {
+                                            "boxSizing": "border-box",
+                                            "color": "inherit",
+                                            "fontSize": "inherit",
+                                            "guide": false,
+                                            "name": "expDate",
+                                            "placeholder": "MM/YY",
+                                            "type": "text",
+                                            "value": "",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        type="text"
+                                        value=""
+                                      >
+                                        <input
+                                          defaultValue=""
+                                          name="expDate"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          placeholder="MM/YY"
+                                          style={
+                                            Object {
+                                              "boxSizing": "border-box",
+                                              "color": "inherit",
+                                              "fontSize": "inherit",
+                                              "guide": false,
+                                              "name": "expDate",
+                                              "placeholder": "MM/YY",
+                                              "type": "text",
+                                              "value": "",
+                                              "width": "100%",
+                                            }
+                                          }
+                                          type="text"
+                                        />
+                                      </t>
+                                    </div>
+                                  </StyledComponent>
+                                </styled.div>
+                              </div>
+                            </StyledComponent>
+                          </Styled(styled.div)>
+                        </Input>
+                      </StyledComponent>
+                    </Styled(Input)>
+                  </ExpDate>
+                </div>
+              </StyledComponent>
+            </styled.div>
+            <styled.div
+              pt={4}
+              width={
+                Array [
+                  1,
+                  0.5,
+                ]
+              }
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "bUswyd",
+                      "rules": Array [
+                        "box-sizing: border-box;",
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "propTypes": Object {
+                      "alignSelf": [Function],
+                      "bg": [Function],
+                      "color": [Function],
+                      "flex": [Function],
+                      "fontSize": [Function],
+                      "m": [Function],
+                      "mb": [Function],
+                      "ml": [Function],
+                      "mr": [Function],
+                      "mt": [Function],
+                      "mx": [Function],
+                      "my": [Function],
+                      "order": [Function],
+                      "p": [Function],
+                      "pb": [Function],
+                      "pl": [Function],
+                      "pr": [Function],
+                      "pt": [Function],
+                      "px": [Function],
+                      "py": [Function],
+                      "width": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                pt={4}
+                width={
+                  Array [
+                    1,
+                    0.5,
+                  ]
+                }
+              >
+                <div
+                  className="sc-bdVaJa csSdhl"
+                  width={
+                    Array [
+                      1,
+                      0.5,
+                    ]
+                  }
+                >
+                  <styled.button
+                    disabled={true}
+                  >
+                    <StyledComponent
+                      disabled={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-dnqmqq",
+                            "isStatic": false,
+                            "lastClassName": "gyxnNf",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.button",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-dnqmqq",
+                          "target": "button",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <button
+                        className="sc-dnqmqq gyxnNf"
+                        disabled={true}
+                      >
+                        Pay $
+                        25
+                      </button>
+                    </StyledComponent>
+                  </styled.button>
+                </div>
+              </StyledComponent>
+            </styled.div>
+            <styled.div
+              py={4}
+              width={1}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "bUswyd",
+                      "rules": Array [
+                        "box-sizing: border-box;",
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                        [Function],
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "propTypes": Object {
+                      "alignSelf": [Function],
+                      "bg": [Function],
+                      "color": [Function],
+                      "flex": [Function],
+                      "fontSize": [Function],
+                      "m": [Function],
+                      "mb": [Function],
+                      "ml": [Function],
+                      "mr": [Function],
+                      "mt": [Function],
+                      "mx": [Function],
+                      "my": [Function],
+                      "order": [Function],
+                      "p": [Function],
+                      "pb": [Function],
+                      "pl": [Function],
+                      "pr": [Function],
+                      "pt": [Function],
+                      "px": [Function],
+                      "py": [Function],
+                      "width": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                py={4}
+                width={1}
+              >
+                <div
+                  className="sc-bdVaJa bUswyd"
+                  width={1}
+                >
+                  <Motion
+                    defaultStyle={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                    key="cardCode"
+                    style={
+                      Object {
+                        "opacity": Object {
+                          "damping": 26,
+                          "precision": 0.01,
+                          "stiffness": 170,
+                          "val": 1,
+                        },
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "opacity": 0,
+                        }
+                      }
+                    >
+                      <ErrorComponent
+                        field="cardCode"
+                        key="cardCode"
+                      >
+                        <Styled(styled.div)
+                          alignItems="center"
+                          justifyContent="center"
+                          key="cardCode"
+                        >
+                          <StyledComponent
+                            alignItems="center"
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bwzfXH",
+                                  "isStatic": false,
+                                  "lastClassName": "jDGYoj",
+                                  "rules": Array [
+                                    "box-sizing: border-box;",
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    "display: flex;",
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "Styled(styled.div)",
+                                "foldedComponentIds": Array [
+                                  "sc-bdVaJa",
+                                ],
+                                "propTypes": Object {
+                                  "alignItems": [Function],
+                                  "flexDirection": [Function],
+                                  "flexWrap": [Function],
+                                  "justifyContent": [Function],
+                                },
+                                "render": [Function],
+                                "styledComponentId": "sc-bwzfXH",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            justifyContent="center"
+                          >
+                            <div
+                              className="sc-bdVaJa sc-bwzfXH jDGYoj"
+                            >
+                              <FaExclamationCircle
+                                color="white"
+                              >
+                                <IconBase
+                                  attr={
+                                    Object {
+                                      "viewBox": "0 0 512 512",
+                                    }
+                                  }
+                                  color="white"
+                                >
+                                  <svg
+                                    color="white"
+                                    fill="currentColor"
+                                    height="1em"
+                                    stroke="currentColor"
+                                    strokeWidth="0"
+                                    style={
+                                      Object {
+                                        "color": "white",
+                                      }
+                                    }
+                                    viewBox="0 0 512 512"
+                                    width="1em"
+                                  >
+                                    <path
+                                      d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </IconBase>
+                              </FaExclamationCircle>
+                              <Styled(styled.div)
+                                color="white"
+                                fontFamily="roboto"
+                                pl={2}
+                              >
+                                <StyledComponent
+                                  color="white"
+                                  fontFamily="roboto"
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-htpNat",
+                                        "isStatic": false,
+                                        "lastClassName": "iCQPbd",
+                                        "rules": Array [
+                                          "box-sizing: border-box;",
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "Styled(styled.div)",
+                                      "foldedComponentIds": Array [
+                                        "sc-bdVaJa",
+                                      ],
+                                      "propTypes": Object {
+                                        "fontFamily": [Function],
+                                        "fontWeight": [Function],
+                                        "letterSpacing": [Function],
+                                        "lineHeight": [Function],
+                                        "textAlign": [Function],
+                                      },
+                                      "render": [Function],
+                                      "styledComponentId": "sc-htpNat",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  pl={2}
+                                >
+                                  <div
+                                    className="sc-bdVaJa sc-htpNat iCQPbd"
+                                    color="white"
+                                    fontFamily="roboto"
+                                  >
+                                    Card code
+                                     is not valid
+                                  </div>
+                                </StyledComponent>
+                              </Styled(styled.div)>
+                            </div>
+                          </StyledComponent>
+                        </Styled(styled.div)>
+                      </ErrorComponent>
+                    </div>
+                  </Motion>
+                </div>
+              </StyledComponent>
+            </styled.div>
+          </div>
+        </StyledComponent>
+      </Styled(styled.div)>
+    </FormComponent>
+  </div>
+</FormContainer>
+`;

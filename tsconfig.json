@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    //    "declarationDir": ".",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "target": "es5",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+
+    "rootDirs": ["src", "stories"]
+  },
+  "exclude": ["node_modules", "dist"],
+  "files": ["src/index.d.ts"],
+  "include": ["src"]
+}
