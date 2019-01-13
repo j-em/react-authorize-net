@@ -50,6 +50,12 @@ Your [Authorize.Net Client Key](https://developer.authorize.net/api/reference/fe
 
 Your [Authorize.Net API Login ID](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key).
 
+##### amount
+
+`number`
+
+The amount of money that is being charged by the payment form.
+
 ##### environment
 
 `"sandbox" | "production"`
@@ -104,70 +110,6 @@ The validation is made according to the shape of data that Authorize.Net API is 
 
 ## How to use
 
-### TypeScript
+### Code sample
 
-```tsx
-import React from 'react'
-import FormContainer from 'react-authorize-net'
-
-const MyPaymentForm = props => (
-  <form onSubmit={props.handleSubmit}>
-    <input
-      name="cardNumber"
-      onChange={props.handleChange('cardNumber')}
-      value={props.values.cardNumber}
-    />
-    <input
-      name="cardCode"
-      onChange={props.handleChange('cardCode')}
-      value={props.values.cardCode}
-    />
-
-    <input
-      name="expDate"
-      onChange={props.handleChange('expDate')}
-      onFocus={props.handleFocus}
-      value={props.values.expDate}
-    />
-
-    <button onClick={props.handleSubmit}>Pay now!</button>
-  </form>
-)
-
-type InvoiceState = {
-  status: 'paid' | 'unpaid'
-  errors?: string[]
-}
-
-class Invoice extends React.Component<{}, InvoiceState> {
-  state = { status: 'unpaid' }
-  render() {
-    return (
-      <div>
-        <h1>Invoice</h1>
-        {status === 'unpaid' ? (
-          <FormContainer
-            component={MyPaymentForm}
-            onSuccess={response => {
-              // Process the payment nonce on your server...
-              const result = processPaymentNonce(response.opaqueData)
-              result
-                .then(() => this.setState({ status: 'paid' }))
-                .catch(err =>
-                  this.setState({
-                    status: 'unpaid',
-                    errors: [
-                      `Could not process payment because of ${err.toString()}`
-                    ]
-                  })
-                )
-            }}
-          />
-        ) : status === 'paid' ? (
-          <p>Thank you for your payment!</p>
-        ) : null}
-      </div>
-    )
-  }
-}
-```
+You can use this [repo](https://github.com/j-em/react-authorize-net-example) as a reference point on how to integrate the library in an existing React application.
