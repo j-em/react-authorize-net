@@ -2,7 +2,11 @@
 
 ![](https://img.shields.io/npm/v/react-authorize-net.svg)
 
+![](artwork/default_form.png)
+
+
 Modern react integration layer for the [Accept.js](https://developer.authorize.net/api/reference/features/acceptjs.html) library.
+
 
 ## Why
 
@@ -54,7 +58,7 @@ Your [Authorize.Net API Login ID](https://support.authorize.net/s/article/How-do
 
 `number`
 
-The amount of money that is being charged by the payment form.
+The amount of money that is being charged by the payment form.  
 
 ##### environment
 
