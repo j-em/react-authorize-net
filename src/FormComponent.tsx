@@ -11,7 +11,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import { FormType, InjectedProps } from './FormContainer'
 import Input, { Props } from './Input'
 
-import robotoFont from 'node_modules/typeface-roboto/files/roboto-latin-400.woff2'
+import robotoFont from 'typeface-roboto/files/roboto-latin-400.woff2'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {

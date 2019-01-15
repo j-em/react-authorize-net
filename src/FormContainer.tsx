@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import R from 'ramda'
 import React from 'react'
 import Accept from './accept-js'
@@ -37,6 +38,12 @@ export interface Props {
   initialState?: State
 }
 
+type TPropTypes = {
+  [T in keyof Props]:
+    | PropTypes.Validator<Props[T]>
+    | PropTypes.Requireable<Props[T]>
+}
+
 export interface InjectedProps extends State {
   amount?: number
   validationErrors: { [K in keyof FormType]: boolean }
@@ -56,6 +63,19 @@ export interface InjectedProps extends State {
 }
 
 export default class FormContainer extends React.Component<Props, State> {
+  static propTypes: Partial<TPropTypes> = {
+    amount: PropTypes.number,
+    apiLoginId: PropTypes.string.isRequired,
+    children: PropTypes.func,
+    clientKey: PropTypes.string.isRequired,
+    component: PropTypes.func,
+    environment: PropTypes.oneOf<'sandbox' | 'production'>([
+      'sandbox',
+      'production'
+    ]).isRequired,
+    render: PropTypes.func
+  }
+
   static runValidations: (
     values: FormType
   ) => { [K in keyof FormType]: boolean } = formValues => ({

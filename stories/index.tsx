@@ -3,7 +3,7 @@ import { text, withKnobs } from '@storybook/addon-knobs/react'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { FormComponent, FormContainer } from '..'
+import { FormComponent, FormContainer } from '../src/index'
 import Input from '../src/Input'
 
 storiesOf('Payment form', module)
