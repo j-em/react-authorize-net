@@ -130,11 +130,13 @@ export default class FormContainer extends React.Component<Props, State> {
       clientKey: this.props.clientKey
     }
 
+    const [month, year] = this.state.values.expDate.split('/');
+
     const cardData = {
       cardCode: this.state.values.cardCode,
-      cardNumber: this.state.values.cardNumber,
-      month: this.state.values.expDate[0],
-      year: this.state.values.expDate[1]
+      cardNumber: this.state.values.cardNumber.replace(/\s/g, ''),
+      month,
+      year
     }
 
     const secureData = { authData, cardData }
