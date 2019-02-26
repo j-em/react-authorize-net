@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import R from 'ramda'
+import * as R from 'ramda'
 import React from 'react'
 import Accept from './accept-js'
 
