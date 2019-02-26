@@ -50,6 +50,7 @@
   "dependencies": {
     "@babel/runtime": "^7.0.0",
     "prop-types": "^15.6.2",
+    "ramda": "^0.26.1",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
     "react-motion": "^0.5.2",
