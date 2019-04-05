@@ -117,3 +117,6 @@ The validation is made according to the shape of data that Authorize.Net API is 
 ### Code sample
 
 You can use this [repo](https://github.com/j-em/react-authorize-net-example) as a reference point on how to integrate the library in an existing React application.
+
+## Paid support
+Reach out at <hello@jeremyallard.dev>
