@@ -68,6 +68,7 @@ const Input = (props: Props) => {
             boxSizing: 'border-box',
             color: 'inherit',
             fontSize: 'inherit',
+            fontFamily: "inherit",
             width: '100%'
           }}
           {...otherProps}

@@ -8,10 +8,11 @@ import {
 import { Motion, spring } from 'react-motion'
 import { Box, Flex, Text } from 'rebass'
 import styled, { createGlobalStyle } from 'styled-components'
-import { FormType, InjectedProps } from './FormContainer'
-import Input, { Props } from './Input'
 
 import robotoFont from 'typeface-roboto/files/roboto-latin-400.woff2'
+
+import { FormType, InjectedProps } from './FormContainer'
+import Input, { Props } from './Input'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -31,6 +32,7 @@ const FormInput = styled(Input)(props => ({
   border: '1px solid #819efc',
   borderRadius: '4px',
   color: props.valid ? '#fff' : '#FFC7EE',
+  fontFamily: 'inherit',
   fontSize: '1em',
   height: '1em',
   padding: '1.5em',
@@ -49,6 +51,7 @@ const PayButton = styled.button(props => ({
   color: 'white',
   fontSize: '1.1em',
   opacity: props.disabled ? 0.9 : 1,
+  fontFamily: 'inherit',
   padding: '12px 48px',
   width: '100%'
 }))
@@ -148,14 +151,15 @@ const ErrorComponent = (props: {
       alignItems="center"
     >
       <FaExclamationCircle color="white" />
-      <Text fontFamily="roboto" color="white" pl={2}>
+      <Text fontFamily="inherit" color="white" pl={2}>
         {slugs[props.field]} is not valid
       </Text>
     </Flex>
   )
 }
 
-const FormComponent = (props: InjectedProps & { className?: string }) => {
+type FormComponentProps = InjectedProps & { className?: string }
+const FormComponent: React.FC<FormComponentProps> = props => {
   const canSubmit = R.values(props.validationErrors).every(
     value => value === true
   )
@@ -238,4 +242,6 @@ const FormComponent = (props: InjectedProps & { className?: string }) => {
   )
 }
 
-export default FormComponent
+export default styled(FormComponent)({
+  fontFamily: 'system-ui'
+})

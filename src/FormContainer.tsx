@@ -68,7 +68,7 @@ export default class FormContainer extends React.Component<Props, State> {
     apiLoginId: PropTypes.string.isRequired,
     children: PropTypes.func,
     clientKey: PropTypes.string.isRequired,
-    component: PropTypes.func,
+    component: PropTypes.any,
     environment: PropTypes.oneOf<'sandbox' | 'production'>([
       'sandbox',
       'production'
