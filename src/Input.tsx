@@ -69,6 +69,7 @@ const Input = (props: Props) => {
             color: 'inherit',
             fontSize: 'inherit',
             fontFamily: "inherit",
+            backgroundColor: "inherit",
             width: '100%'
           }}
           {...otherProps}
