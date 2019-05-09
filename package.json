@@ -1,6 +1,6 @@
 {
   "name": "react-authorize-net",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "React integration for Authorize.Net",
   "main": "dist/react-authorize-net.js",
   "module": "dist/react-authorize-net.js",
