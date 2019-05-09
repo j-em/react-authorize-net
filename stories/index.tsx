@@ -1,26 +1,48 @@
 import '@storybook/addon-actions'
-import centered from '@storybook/addon-centered'
-import { text, withKnobs } from '@storybook/addon-knobs/react'
+
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 import { FaArrowLeft, FaInfoCircle } from 'react-icons/fa'
-import { Box, Button, Flex, Text } from 'rebass'
-import { FormComponent, FormContainer } from '../src/index'
-import Input from '../src/Input'
+import { Flex, Text } from 'rebass'
+import styled from 'styled-components'
 
-const DefaultContainer = _ => (
-  <FormContainer
-    clientKey={process.env.AUTHORIZENET_CLIENTKEY}
-    apiLoginId={process.env.AUTHORIZENET_LOGINID}
-    environment="sandbox"
-    component={FormComponent}
-    amount={25}
-  />
-)
+import { FormComponent, FormContainer } from '../src'
 
-storiesOf('FormContainer', module)
-  .add('standalone', () => {
-    return <DefaultContainer />
+const AuthorizeNetAuthInfo = {
+  clientKey: process.env.AUTHORIZENET_CLIENTKEY,
+  apiLoginId: process.env.AUTHORIZENET_LOGINID
+}
+
+storiesOf('FormComponent', module)
+  .add('with default style', () => {
+    return (
+      <FormContainer
+        {...AuthorizeNetAuthInfo}
+        environment="sandbox"
+        component={FormComponent}
+        amount={25}
+      />
+    )
+  })
+
+  .add('with custom style (using styled-components)', () => {
+    const StyledForm = styled(FormComponent)`
+      font-family: monospace;
+      button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+      }
+    `
+
+    return (
+      <FormContainer
+        {...AuthorizeNetAuthInfo}
+        amount={25}
+        environment={'sandbox'}
+        component={StyledForm}
+      />
+    )
   })
   .add('as a payment step', () => {
     return (
@@ -56,7 +78,11 @@ storiesOf('FormContainer', module)
           </Text>
         </Flex>
 
-        <DefaultContainer />
+        <FormContainer
+          {...AuthorizeNetAuthInfo}
+          environment={'sandbox'}
+          amount={25}
+        />
       </div>
     )
   })
