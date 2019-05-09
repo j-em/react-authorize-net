@@ -158,8 +158,16 @@ const ErrorComponent = (props: {
   )
 }
 
-type FormComponentProps = InjectedProps & { className?: string }
-const FormComponent: React.FC<FormComponentProps> = props => {
+type FormComponentProps = InjectedProps & {
+  className?: string
+  style?: {
+    form?: React.CSSProperties
+    button?: React.CSSProperties
+    input?: React.CSSProperties
+  }
+}
+
+const FormComponent: React.FC<FormComponentProps> = ({ style, ...props }) => {
   const canSubmit = R.values(props.validationErrors).every(
     value => value === true
   )
@@ -172,6 +180,7 @@ const FormComponent: React.FC<FormComponentProps> = props => {
   return (
     <Flex
       className={props.className}
+      style={style && style.form}
       flexWrap="wrap"
       mb={4}
       bg="#6772e5"
@@ -182,6 +191,7 @@ const FormComponent: React.FC<FormComponentProps> = props => {
 
       <Box width={[1, 2 / 4]} mb={[3, 0] as any}>
         <CardNumber
+          style={style && style.input}
           onFocus={R.curry(props.handleFocus)('cardNumber')}
           onBlur={props.handleBlur}
           onChange={R.curry(props.handleChange)('cardNumber')}
@@ -192,6 +202,7 @@ const FormComponent: React.FC<FormComponentProps> = props => {
       </Box>
       <Box width={[1 / 2, 1 / 4]} pl={[0, 4] as any}>
         <CardCode
+          style={style && style.input}
           onFocus={R.curry(props.handleFocus)('cardCode')}
           onBlur={props.handleBlur}
           onChange={R.curry(props.handleChange)('cardCode')}
@@ -203,6 +214,7 @@ const FormComponent: React.FC<FormComponentProps> = props => {
 
       <Box width={[1 / 2, 1 / 4]} pl={2}>
         <ExpDate
+          style={style && style.input}
           onFocus={R.curry(props.handleFocus)('expDate')}
           onBlur={props.handleBlur}
           onChange={R.curry(props.handleChange)('expDate')}
@@ -213,6 +225,7 @@ const FormComponent: React.FC<FormComponentProps> = props => {
       </Box>
       <Box width={[1, 1 / 2] as any} pt={4}>
         <PayButton
+          style={style && style.button}
           disabled={!canSubmit}
           onClick={canSubmit ? props.handleSubmit : undefined}
         >

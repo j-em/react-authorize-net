@@ -24,6 +24,35 @@ storiesOf('FormComponent', module)
       />
     )
   })
+  .add('with custom style (using style objects)', () => {
+    return (
+      <FormContainer
+        {...AuthorizeNetAuthInfo}
+        environment="sandbox"
+        component={props => (
+          <FormComponent
+            {...props}
+            style={{
+              form: { backgroundColor: 'white' },
+              input: {
+                backgroundColor: 'white',
+                fontFamily: 'monospace',
+                color: 'black',
+                border: '1px solid black'
+              },
+              button: {
+                backgroundColor: 'white',
+                border: '1px solid black',
+                boxShadow: 'none',
+                color: 'black'
+              }
+            }}
+          />
+        )}
+        amount={25}
+      />
+    )
+  })
 
   .add('with custom style (using styled-components)', () => {
     const StyledForm = styled(FormComponent)`

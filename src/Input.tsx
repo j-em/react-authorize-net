@@ -20,6 +20,7 @@ const Input = (props: Props) => {
     focused,
     label,
     className,
+    style,
     ...otherProps
   } = props
 
@@ -51,7 +52,7 @@ const Input = (props: Props) => {
   }
 
   return (
-    <Flex className={className} alignItems="center">
+    <Flex className={className} alignItems="center" style={style}>
       {props.label ? (
         <Flex flexDirection={'row-reverse'} mr={2}>
           {props.label}
