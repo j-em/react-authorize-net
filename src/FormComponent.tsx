@@ -150,8 +150,8 @@ const ErrorComponent = (props: {
       justifyContent="center"
       alignItems="center"
     >
-      <FaExclamationCircle color="white" />
-      <Text fontFamily="inherit" color="white" pl={2}>
+      <FaExclamationCircle color="inherit" />
+      <Text fontFamily="inherit" color="inherit" pl={2}>
         {slugs[props.field]} is not valid
       </Text>
     </Flex>
