@@ -29,7 +29,7 @@ export interface Props {
   environment: 'sandbox' | 'production'
   clientKey: string
   apiLoginId: string
-  onSuccess?: (Response: Accept.Response) => void
+  onSuccess?: (Response: Accept.Response, formValues: FormType) => void
   onError?: (errors: string[]) => void
   amount?: number
   component?: React.FunctionComponent<InjectedProps>
@@ -130,7 +130,7 @@ export default class FormContainer extends React.Component<Props, State> {
       clientKey: this.props.clientKey
     }
 
-    const [month, year] = this.state.values.expDate.split('/');
+    const [month, year] = this.state.values.expDate.split('/')
 
     const cardData = {
       cardCode: this.state.values.cardCode,
@@ -143,12 +143,14 @@ export default class FormContainer extends React.Component<Props, State> {
 
     return Accept.dispatchData(secureData)
       .then(response => {
+        if (this.props.onSuccess) {
+          this.props.onSuccess(response, this.state.values)
+        }
+
         this.setState({
           values: { cardCode: '', cardNumber: '', expDate: '' }
         })
-        if (this.props.onSuccess) {
-          this.props.onSuccess(response)
-        }
+
         return response
       })
       .catch(response => {
