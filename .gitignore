@@ -1,3 +1,4 @@
+.out
 *.log
 dist
 .DS_Store
