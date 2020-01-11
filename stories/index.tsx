@@ -5,8 +5,9 @@ import React from 'react'
 import { FaArrowLeft, FaInfoCircle } from 'react-icons/fa'
 import { Flex, Text } from 'rebass'
 import styled from 'styled-components'
+import Fetch from './Fetch'
 
-import { FormComponent, FormContainer } from '../src'
+import { FormComponent, FormContainer, AcceptHosted } from '../src'
 
 const AuthorizeNetAuthInfo = {
   clientKey: process.env.AUTHORIZENET_CLIENTKEY,
@@ -115,3 +116,27 @@ storiesOf('FormComponent', module)
       </div>
     )
   })
+
+storiesOf('Accept Hosted', module).add('with embedded iframe', () => {
+  return (
+    <Fetch
+      url={
+        'https://us-central1-react-authorize-net.cloudfunctions.net/get-form-token'
+      }
+    >
+      {response => (
+        <AcceptHosted
+          type={'iframe'}
+          mode={'sandbox'}
+          formToken={response.token}
+          onCancel={() => console.log(`New cancel message from Accept Hosted`)}
+          onResize={(width, height) =>
+            console.log(
+              `New resize message from Accept Hosted\nwidth: ${width} height: ${height}`
+            )
+          }
+        />
+      )}
+    </Fetch>
+  )
+})
