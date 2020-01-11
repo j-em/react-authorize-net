@@ -15,9 +15,8 @@
     "noUnusedParameters": true,
     "strict": true,
     "target": "es5",
-    "lib": ["es5", "es6", "es7", "es2017", "dom"],
-
-    "rootDirs": ["src", "stories"]
+    "lib": ["ES2015", "DOM"],
+    "types": ["acceptjs", "react"]
   },
   "exclude": ["node_modules", "dist"],
   "files": ["src/index.d.ts"],
