@@ -4,9 +4,7 @@
 
 ![](artwork/default_form.png)
 
-
 Modern react integration layer for the [Accept.js](https://developer.authorize.net/api/reference/features/acceptjs.html) library.
-
 
 ## Why
 
@@ -58,7 +56,7 @@ Your [Authorize.Net API Login ID](https://support.authorize.net/s/article/How-do
 
 `number`
 
-The amount of money that is being charged by the payment form.  
+The amount of money that is being charged by the payment form.
 
 ##### environment
 
@@ -112,6 +110,78 @@ The validation is made according to the shape of data that Authorize.Net API is 
 
 `apiErrors` represents any errors that Authorize.Net API might return while making the underlying API request.
 
+### \<AcceptHosted />
+
+This component aims to provide an easy-to-use and idiomatic React interface to [Accept Hosted](https://developer.authorize.net/api/reference/features/accept_hosted.html).
+
+#### Styling
+
+Custom styles can be applied to the form by supplying an appropriate `style` or `className` prop.
+
+#### Custom element
+
+The button used to trigger the actual payment form can be customized by using the `children` prop.
+
+```jsx
+<AcceptHosted formToken={'...'}>
+  <button>Pay now</button>
+</AcceptHosted>
+```
+
+#### Props
+
+##### formToken
+
+`string`
+
+`formToken` is used to represent the transaction itself.
+
+It is returned by [Authorize.Net API](https://developer.authorize.net/api/reference/#accept-suite-get-an-accept-payment-page).
+
+##### mode
+
+`'sandbox' | 'production'`
+
+If you're using the [sandbox](https://developer.authorize.net/hello_world/sandbox/) environment or not.
+
+##### type
+
+`'redirect' | 'iframe'`
+
+Renders the form either as an iframe or redirect link.
+
+[More information](https://developer.authorize.net/api/reference/features/accept_hosted.html#Displaying_the_Form)
+
+##### onResize
+
+`(width: number, height: number) => void`
+
+Called for every `resizeWindow` messages from Accept Hosted.
+
+##### onCancel
+
+`() => void`
+
+Called for every `cancel` messages from Accept Hosted.
+
+##### onTransact
+
+`(response: TransactionResponse) => void`
+
+Called for every `transactResponse` messages from Accept Hosted.
+
+##### onReceiveCommunication
+
+`(queryStr: string) => void`
+
+Low level handler for raw communication between Accept Hosted and client code.
+
+##### onMessage
+
+`(message: Message) => void`
+
+Called for every valid messages coming from Accept Hosted.
+
 ## How to use
 
 ### Code sample
@@ -119,4 +189,5 @@ The validation is made according to the shape of data that Authorize.Net API is 
 You can use this [repo](https://github.com/j-em/react-authorize-net-example) as a reference point on how to integrate the library in an existing React application.
 
 ## Paid support
+
 Reach out at <hello@jeremyallard.dev>
