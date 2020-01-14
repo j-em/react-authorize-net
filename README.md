@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/npm/v/react-authorize-net.svg)
 
-![](artwork/default_form.png)
+![](artwork/logo.png)
 
 Modern react integration layer for the [Accept.js](https://developer.authorize.net/api/reference/features/acceptjs.html) library.
 
