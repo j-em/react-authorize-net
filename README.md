@@ -1,5 +1,3 @@
-# react-authorize-net
-
 ![](https://img.shields.io/npm/v/react-authorize-net.svg)
 
 ![](artwork/logo.png)
