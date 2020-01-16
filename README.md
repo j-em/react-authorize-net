@@ -1,7 +1,8 @@
-![](artwork/logo.png)
+<img src="artwork/logo.png" width="500">
+
 ![](https://img.shields.io/npm/v/react-authorize-net.svg?style=flat)
 
-Modern react integration layer for the [Accept.js](https://developer.authorize.net/api/reference/features/acceptjs.html) library.
+Modern and idiomatic React interface to [Authorize.Net](https://www.authorize.net).
 
 ## Why
 
@@ -10,10 +11,10 @@ Integrating the [Authorize.Net](https://www.authorize.net/) platform with a mode
 Their whole platform is very unfriendly to SPAs and even more so to the beautiful programming model offered by React.
 
 The main goal of this library is to abstract some of this pain away.
-  
+
 ## Features
 
-- Modern idiomatic React interface to Accept.js
+- Modern idiomatic React interface to Authorize.Net
 - Small API surface
 - Fully typed interface (using TypeScript)
 - Quick and easy integration in any modern React stack
@@ -109,7 +110,9 @@ The validation is made according to the shape of data that Authorize.Net API is 
 
 ### \<AcceptHosted />
 
-This component aims to provide an easy-to-use and idiomatic React interface to [Accept Hosted](https://developer.authorize.net/api/reference/features/accept_hosted.html).
+This component allows you to create forms that are fully SAQ-A compliant, through an idiomatic and easy-to-use API.
+
+It is essentially a wrapper around [Accept Hosted](https://developer.authorize.net/api/reference/features/accept_hosted.html).
 
 #### Styling
 
@@ -185,6 +188,9 @@ Called for every valid messages coming from Accept Hosted.
 
 You can use this [repo](https://github.com/j-em/react-authorize-net-example) as a reference point on how to integrate the library in an existing React application.
 
-## Paid support
+## Commercial support
 
-Reach out at <hello@jeremyallard.dev>
+Are you having trouble integrating Authorize.Net with the rest of your infrastructure?
+Do you need a feature that is not supported in react-authorize-net yet?
+
+Reach out at <hello@jeremyallard.dev>!
