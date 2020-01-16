@@ -1,5 +1,6 @@
+<div align="center">
 <img src="artwork/logo.png" width="500">
-
+</div>
 ![](https://img.shields.io/npm/v/react-authorize-net.svg?style=flat)
 
 Modern and idiomatic React interface to [Authorize.Net](https://www.authorize.net).
