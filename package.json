@@ -1,6 +1,6 @@
 {
   "name": "react-authorize-net",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "React integration for Authorize.Net",
   "main": "dist/react-authorize-net.js",
   "module": "dist/react-authorize-net.js",
@@ -75,7 +75,7 @@
     "@storybook/addon-knobs": "^3.4.12",
     "@storybook/addon-viewport": "^4.1.18",
     "@storybook/react": "^4.1.18",
-    "@types/acceptjs": "github:j-em/types-accept-js",
+    "@types/acceptjs": "j-em/types-accept-js",
     "@types/enzyme": "^3.10.4",
     "@types/jest": "^23.3.14",
     "@types/prop-types": "^15.7.3",
