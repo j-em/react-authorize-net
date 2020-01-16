@@ -7,44 +7,44 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:export-ydpi="298.84"
-   inkscape:export-xdpi="298.84"
-   inkscape:export-filename="/Users/jeremyallard/Documents/react-authorize-net/artwork/logo.png"
-   width="174.34019mm"
-   height="87.96331mm"
-   viewBox="0 0 174.3402 87.96331"
-   version="1.1"
-   id="svg8"
+   sodipodi:docname="logo.svg"
    inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
-   sodipodi:docname="logo.svg">
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 174.3402 87.96331"
+   height="87.96331mm"
+   width="174.34019mm"
+   inkscape:export-filename="/Users/jeremyallard/Documents/react-authorize-net/artwork/logo.png"
+   inkscape:export-xdpi="298.84"
+   inkscape:export-ydpi="298.84">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     showborder="false"
-     lock-margins="true"
-     fit-margin-bottom="40"
-     fit-margin-right="40"
-     fit-margin-left="40"
-     fit-margin-top="40"
-     showguides="true"
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.71812629"
-     inkscape:cx="353.90417"
-     inkscape:cy="140.82121"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="691"
-     inkscape:window-x="0"
+     inkscape:window-maximized="0"
      inkscape:window-y="23"
-     inkscape:window-maximized="0" />
+     inkscape:window-x="0"
+     inkscape:window-height="691"
+     inkscape:window-width="1280"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="201.90902"
+     inkscape:cx="249.46571"
+     inkscape:zoom="0.71812629"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showguides="true"
+     fit-margin-top="40"
+     fit-margin-left="40"
+     fit-margin-right="40"
+     fit-margin-bottom="40"
+     lock-margins="true"
+     showborder="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -58,21 +58,21 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-4.5118654,-47.534733)"
-     inkscape:label="Layer 1"
+     id="layer1"
      inkscape:groupmode="layer"
-     id="layer1">
+     inkscape:label="Layer 1"
+     transform="translate(-4.5118654,-47.534733)">
     <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:NimbusSanL;-inkscape-font-specification:'NimbusSanL Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;stroke-width:0.264583"
-       x="43.845242"
+       id="text12"
        y="95.25"
-       id="text12"><tspan
-         dy="0 0 0 0 0"
-         sodipodi:role="line"
-         id="tspan10"
-         x="43.845242"
+       x="43.845242"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:NimbusSanL;-inkscape-font-specification:'NimbusSanL Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:NimbusSanL;-inkscape-font-specification:'NimbusSanL Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;stroke-width:0.264583"
          y="95.25"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;font-family:NimbusSanL;-inkscape-font-specification:'NimbusSanL Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;stroke-width:0.264583">react-authorize-net</tspan></text>
+         x="43.845242"
+         id="tspan10"
+         sodipodi:role="line"
+         dy="0 0 0 0 0">react-authorize-net</tspan></text>
   </g>
 </svg>
