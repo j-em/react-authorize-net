@@ -1,6 +1,5 @@
-![](https://img.shields.io/npm/v/react-authorize-net.svg)
-
 ![](artwork/logo.png)
+![](https://img.shields.io/npm/v/react-authorize-net.svg?style=flat)
 
 Modern react integration layer for the [Accept.js](https://developer.authorize.net/api/reference/features/acceptjs.html) library.
 
@@ -11,7 +10,7 @@ Integrating the [Authorize.Net](https://www.authorize.net/) platform with a mode
 Their whole platform is very unfriendly to SPAs and even more so to the beautiful programming model offered by React.
 
 The main goal of this library is to abstract some of this pain away.
-
+  
 ## Features
 
 - Modern idiomatic React interface to Accept.js
