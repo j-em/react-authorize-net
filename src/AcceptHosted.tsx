@@ -63,8 +63,8 @@ function isValidTransaction(o: unknown): o is TransactionResponse {
 }
 
 const AuthorizeNetPostUrl = {
-  production: 'https://accept.authorize.net/payment/payment',
-  sandbox: 'https://test.authorize.net/payment/payment'
+  production: 'https://accept.authorize.net',
+  sandbox: 'https://test.authorize.net'
 }
 
 type AcceptHostedProps = {
@@ -72,7 +72,8 @@ type AcceptHostedProps = {
   className?: string
   formToken: string
   mode?: 'sandbox' | 'production'
-  type?: 'redirect' | 'iframe'
+  type?: 'redirect' | 'iframe',
+  endpoint?: 'payment/payment' | 'customer/manage' | 'customer/addPayment' | 'customer/addShipping' | 'customer/editPayment' | 'customer/editShipping'
 
   onReceiveCommunication?: (queryStr: string) => void
   onMessage?: (message: Message) => void
@@ -86,6 +87,7 @@ export const AcceptHosted: React.FC<AcceptHostedProps> = ({
   formToken,
   mode = 'sandbox',
   type = 'iframe',
+  endpoint = 'payment/payment',
   onMessage,
   style,
   className,
@@ -130,7 +132,9 @@ export const AcceptHosted: React.FC<AcceptHostedProps> = ({
     }
   }, [])
 
-  const [submitted, setSubmitted] = useState(false)
+  const [submitted, setSubmitted] = useState(false);
+
+  const action = `${AuthorizeNetPostUrl[mode]}/${endpoint}`;
 
   switch (type) {
     case 'iframe':
@@ -139,7 +143,7 @@ export const AcceptHosted: React.FC<AcceptHostedProps> = ({
           <form
             onSubmit={() => setSubmitted(true)}
             method={'POST'}
-            action={AuthorizeNetPostUrl[mode]}
+            action={action}
             target={'iframeAuthorizeNet'}
           >
             <input name="token" type={'hidden'} value={formToken} />
@@ -161,7 +165,7 @@ export const AcceptHosted: React.FC<AcceptHostedProps> = ({
           style={style}
           className={className}
           method={'POST'}
-          action={AuthorizeNetPostUrl[mode]}
+          action={action}
         >
           <input type={'hidden'} name={'token'} value={formToken} />
           {formTrigger}
