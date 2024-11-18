@@ -12,7 +12,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import robotoFont from 'typeface-roboto/files/roboto-latin-400.woff2'
 
 import { FormType, InjectedProps } from './FormContainer'
-import Input, { Props } from './Input'
+import Input, { PropsWithOptionalMask } from './Input'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -60,8 +60,29 @@ const CardNumber = ({
   type = 'text',
   name = 'cardNumber',
   placeholder = '1234 5678 9012 3456',
+  mask = [
+    /\d/,
+    /\d/,
+    /\d/,
+    /\d/,
+    ' ',
+    /\d/,
+    /\d/,
+    /\d/,
+    /\d/,
+    ' ',
+    /\d/,
+    /\d/,
+    /\d/,
+    /\d/,
+    ' ',
+    /\d/,
+    /\d/,
+    /\d/,
+    /\d/
+  ],
   ...props
-}: Props) => {
+}: PropsWithOptionalMask) => {
   return (
     <FormInput
       name="cardNumber"
@@ -69,27 +90,7 @@ const CardNumber = ({
       placeholder={placeholder}
       guide={false}
       label={<FaCreditCard size="1.1em" />}
-      mask={[
-        /\d/,
-        /\d/,
-        /\d/,
-        /\d/,
-        ' ',
-        /\d/,
-        /\d/,
-        /\d/,
-        /\d/,
-        ' ',
-        /\d/,
-        /\d/,
-        /\d/,
-        /\d/,
-        ' ',
-        /\d/,
-        /\d/,
-        /\d/,
-        /\d/
-      ]}
+      mask={mask}
       {...props}
     />
   )
@@ -99,15 +100,16 @@ const CardCode = ({
   type = 'text',
   name = 'cardCode',
   placeholder = 'CVC',
+  mask = [/\d/, /\d/, /\d/, /\d?/],
   ...props
-}: Props) => {
+}: PropsWithOptionalMask) => {
   return (
     <FormInput
       name={name}
       type={type}
       placeholder={placeholder}
       guide={false}
-      mask={[/\d/, /\d/, /\d/, /\d?/]}
+      mask={mask}
       {...props}
     />
   )
@@ -117,16 +119,17 @@ const ExpDate = ({
   type = 'text',
   name = 'expDate',
   placeholder = 'MM/YY',
+  mask = [/\d/, /\d/, '/', /\d/, /\d/],
   ...props
-}: Props) => {
+}: PropsWithOptionalMask) => {
   return (
     <FormInput
       name={name}
       type={type}
       placeholder={placeholder}
-      mask={[/\d/, /\d/, '/', /\d/, /\d/]}
       guide={false}
       label={<FaRegCalendarAlt size="1.1em" />}
+      mask={mask}
       {...props}
     />
   )

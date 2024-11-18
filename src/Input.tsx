@@ -10,6 +10,10 @@ export interface Props
   label?: JSX.Element | string
 }
 
+export type PropsWithOptionalMask = Omit<Props, 'mask'> & {
+  mask?: Props['mask']
+}
+
 const Input = (props: Props) => {
   const {
     onChange,
@@ -69,8 +73,8 @@ const Input = (props: Props) => {
             boxSizing: 'border-box',
             color: 'inherit',
             fontSize: 'inherit',
-            fontFamily: "inherit",
-            backgroundColor: "inherit",
+            fontFamily: 'inherit',
+            backgroundColor: 'inherit',
             width: '100%'
           }}
           {...otherProps}
