@@ -58,7 +58,7 @@
     "react-motion": "^0.5.2",
     "react-text-mask": "^5.4.3",
     "rebass": "^3.2.2",
-    "styled-components": "^4.4.1",
+    "styled-components": "^5.0.0",
     "styled-system": "^3.2.1"
   },
   "devDependencies": {
@@ -92,7 +92,7 @@
     "@types/storybook__addon-actions": "^3.4.3",
     "@types/storybook__addon-knobs": "^3.4.1",
     "@types/storybook__react": "^3.0.9",
-    "@types/styled-components": "^4.4.2",
+    "@types/styled-components": "^5.0.0",
     "@types/styled-system": "^3.2.2",
     "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^6.26.3",
@@ -133,6 +133,6 @@
     "tslint-react": "^3.6.0",
     "typedoc": "^0.16.6",
     "typeface-roboto": "0.0.54",
-    "typescript": "^3.7.4"
+    "typescript": "3.8"
   }
 }
