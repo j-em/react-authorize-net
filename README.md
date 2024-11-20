@@ -1,5 +1,5 @@
 <div align="center">
-<img src="artwork/logo.png" width="500">
+<img src="artwork/logo.svg" width="500">
 </div>
 
 ![](https://img.shields.io/npm/v/react-authorize-net.svg?style=flat)
@@ -188,7 +188,7 @@ Called for every valid messages coming from Accept Hosted.
 
 ### Code sample
 
-You can use this [repo](https://github.com/j-em/react-authorize-net-example) as a reference point on how to integrate the library in an existing React application.
+You can use this [repo](https://github.com/j-em/react-authorize-net-nextjs) as a reference point on how to integrate the library in an existing React application.
 
 ## Commercial support
 
