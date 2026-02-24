@@ -7,10 +7,11 @@
    width="757.29187"
    height="747.32751"
    viewBox="0 0 757.29187 747.32752"
-   sodipodi:docname="new_logo.png"
+   sodipodi:docname="logo.svg"
    inkscape:export-filename="new_logo.svg"
    inkscape:export-xdpi="100"
    inkscape:export-ydpi="100"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -52,7 +53,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:export-bgcolor="#ffffffff">
+     inkscape:export-bgcolor="#ffffffff"
+     inkscape:zoom="0.88444872"
+     inkscape:cx="335.8024"
+     inkscape:cy="364.06859"
+     inkscape:window-width="1805"
+     inkscape:window-height="1131"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1">
     <inkscape:page
        x="0"
        y="0"
@@ -90,19 +100,20 @@
          id="image1"
          x="-30.532135"
          y="-0.1650008"
-         clip-path="url(#clipPath4)" />
+         clip-path="url(#clipPath4)"
+         transform="translate(1.0039204)" />
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:454.301;display:inline;fill:#000000"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:511.964;display:inline;fill:#000000"
        x="93.944954"
        y="30.53211"
        id="text1"
-       transform="translate(-78.171271,4.5322463)"><tspan
+       transform="translate(-106.68837,4.5322463)"><tspan
          x="93.944954"
          y="30.53211"
-         id="tspan4"><tspan
+         id="tspan2"><tspan
    style="font-weight:bold;-inkscape-font-specification:'Ubuntu Bold'"
-   id="tspan3">react</tspan> authorize net</tspan></text>
+   id="tspan1">react</tspan> authorize net</tspan></text>
   </g>
 </svg>
